@@ -1,12 +1,15 @@
 import Feed from './component/Feed';
+import UsersAccount from './component/UsersAccount';
 
 export default function Home() {
   return (
-    <div className="flex px-4 sm:px-36 pt-8 space-x-4">
-      <section className="w-full sm:w-2/3">
+    <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-6xl mx-auto gap-4">
+      <section className="col-span-2">
         <Feed />
       </section>
-      <section className="bg-amber-100 w-1/3 hidden sm:block">Accounts</section>
+      <section className="col-span-1 hidden md:inline-grid ">
+        <UsersAccount />
+      </section>
     </div>
   );
 }

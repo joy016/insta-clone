@@ -28,7 +28,7 @@ const Post: React.FC<PostProps> = ({
     setHasLiked(!hasLiked);
   };
   return (
-    <div key={id} className="bg-white my-9 border rounded-md">
+    <div key={id} className="bg-white my-9 border rounded-md shadow-md">
       <div className="flex px-6 py-7 items-center space-x-4">
         <img src={userImg} className="h-12 rounded-full object-cover border " />
         <p className="font-bold flex-1">{userName}</p>
